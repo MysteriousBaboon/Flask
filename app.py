@@ -32,12 +32,6 @@ def student_list():
     return render_template('index.html', students=students)
 
 
-@app.route('/pinguin_and_poney')
-def pinguin_and_poney():
-    s3 = boto3.client('s3')
-    s3.download_file('bucketanuno', 'drapeau-anne-stokes-pirate-pr.png', 'nuno2.png')
-    return "<p>Chouette le poney!</p>"
-
 @app.route('/test')
-def pinguin_and_poney():
+def test():
     return "<p>TEST!</p>"

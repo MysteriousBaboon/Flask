@@ -32,6 +32,5 @@ def student_list():
     return render_template('index.html', students=students)
 
 
-@app.route('/test')
-def test():
-    return "<p>TEST!</p>"
+if __name__ == '__main__':
+    app.run(host='0.0.0.0')

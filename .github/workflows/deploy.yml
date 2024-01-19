@@ -22,5 +22,4 @@ jobs:
 
       - name: Run Flask Application
         run: |
-          source venv/bin/activate
-          flask run
+          sudo systemctl restart flaskapp

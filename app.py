@@ -37,3 +37,7 @@ def pinguin_and_poney():
     s3 = boto3.client('s3')
     s3.download_file('bucketanuno', 'drapeau-anne-stokes-pirate-pr.png', 'nuno2.png')
     return "<p>Chouette le poney!</p>"
+
+@app.route('/test')
+def pinguin_and_poney():
+    return "<p>TEST!</p>"
